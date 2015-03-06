@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <SDL.h>
+
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#else
 #include <GL/gl.h>
+#endif
 
 #define SCOPE_SIZE 768
 #define LINE_SEGMENTS 24
